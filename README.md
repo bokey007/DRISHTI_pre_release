@@ -24,9 +24,9 @@ Drishti can detect both gender as well as perceivable age of person present in t
 ### 5. Action Recognition
 ![](https://github.com/bokey007/DRISHTI/blob/main/demo_vids/action%20recognition.gif)
 
-Currently we are not looking into temporal information to recognise action being performed. We are using simple neural network to classify the the skeletal data taken from OpenPose. 
+Currently we are not looking into temporal information to recognise action being performed. We are using simple neural network to classify the the skeletal data taken from Pose Estimation Module. 
 
-We plan to accomodate temporal info by passing OpenPose output to recently opensourced View Adaptive Recurrent Neural Networks.
+We plan to accomodate temporal info by passing skeletal data to recently opensourced View Adaptive Recurrent Neural Networks.
 
 ![](https://github.com/microsoft/View-Adaptive-Neural-Networks-for-Skeleton-based-Human-Action-Recognition/blob/master/README.md)
 
@@ -35,7 +35,7 @@ Actions being recognised are:
 ### 6. Gait Recognition
 ![](https://github.com/bokey007/DRISHTI/blob/main/demo_vids/gait_recognition.gif)
 
-We are able to extract gait signature from the skeletal data given by OpenPose and then further classify these gait signatures using SVM classifier. But currently we are highly overfitting on the training data. We are trying our best to come up with the model that generalises better and thus can be used in real-time.  
+We are able to extract gait signature from the skeletal data given by Pose Estimaion Module and then further classify these gait signatures using SVM classifier. But currently we are highly overfitting on the training data. We are trying our best to come up with the model that generalises better and thus can be used in real-time.  
 ### 7. Person-Weapon Detection and Tracking
 ![](https://github.com/bokey007/DRISHTI/blob/main/demo_vids/object_face_track.gif)
 
